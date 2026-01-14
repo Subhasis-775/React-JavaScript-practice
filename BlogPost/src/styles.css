@@ -1,0 +1,90 @@
+/* ---------- Global Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* ---------- Page Wrapper ---------- */
+.blog-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.blog-container h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+/* ---------- Post Card ---------- */
+.post-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Title ---------- */
+.post-card h4 {
+  font-size: 1.25rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+/* ---------- Body ---------- */
+.post-card p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* ---------- Tags ---------- */
+.post-tags {
+  margin-bottom: 12px;
+}
+
+.post-tags span {
+  display: inline-block;
+  background: #f1f5f9;
+  color: #334155;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+/* ---------- Footer (Reactions + Views) ---------- */
+.post-footer {
+  display: flex;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.post-footer span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .post-card {
+    padding: 16px;
+  }
+
+  .post-card h4 {
+    font-size: 1.1rem;
+  }
+}
